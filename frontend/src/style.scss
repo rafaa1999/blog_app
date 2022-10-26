@@ -2,9 +2,15 @@ $gray_lighten : #e5d1b8;
 $dark_lighten : #2b2129;
 
 .app{
-
+    display: flex;
+    justify-content: center;
+    // LOGIN AND REGISTER
     .container{
-
+        width: 1024px;
+        .link{
+            text-decoration: none;
+            color: inherit;
+        }
         .auth{
             display: flex;
             flex-direction: column;
@@ -12,45 +18,92 @@ $dark_lighten : #2b2129;
             align-items: center;
             height: 100vh;
             background-color: $gray_lighten;
-        }
 
-        h1{
-            font-size: 20px;
-            margin-bottom: 20px;
-            color: $dark_lighten;
-        }
+            h1{
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: $dark_lighten;
+            }
 
-        form{
+            form{
+                display: flex;
+                flex-direction: column;
+                width: 200px;
+                padding: 50px;
+                gap: 20px;
+                background-color: white;
+    
+                input{
+                    padding: 10px;
+                    border: none;
+                    border-bottom: 1px solid gray;
+                }
+
+                button{
+                    border: none;
+                    color: white;
+                    background-color: $dark_lighten;
+                    font-weight: 500;
+                    cursor: pointer;
+                }
+
+                span{
+                    text-align: center;
+                    font-size: 12px;
+                }
+
+                p{
+                    text-align: center;
+                    font-size: 12px;
+                    color: red;
+                }
+    
+            }
+        }
+    }
+
+    // NAVBAR
+
+    .navbar{
+        .container{
             display: flex;
-            flex-direction: column;
-            width: 200px;
-            padding: 50px;
-            gap: 20px;
-            background-color: white;
+            flex-direction: row;
+            padding: 10px 0;
+            justify-content: space-between;
+            align-items: center;
+            .logo{
+                img{
+                    width: 120px;
+                }
+            }
+            .links{
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                align-items: center;
 
-            input{
-                padding: 10px;
-                border: none;
-                border-bottom: 1px solid gray;
-            }
-            button{
-                border: none;
-                color: white;
-                background-color: $dark_lighten;
-                font-weight: 500;
-                cursor: pointer;
-            }
-            span{
-                text-align: center;
-                font-size: 12px;
-            }
-            p{
-                text-align: center;
-                font-size: 12px;
-                color: red;
-            }
+                h6{
+                    font-size: 16px;
+                    font-weight: 300;
+                }
 
+                span{
+                    cursor: pointer;
+                }
+
+                .write{
+                    background-color: $dark_lighten;
+                    color: white;
+                    width: 50xp;
+                    height: 50xp;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: 300;
+                    padding: 10px;
+                }
+            }
         }
-
     }
 }
