@@ -102,8 +102,29 @@ $dark_lighten : #2b2129;
                     align-items: center;
                     font-weight: 300;
                     padding: 10px;
+                    border: 1px solid white;
+
+                    &:hover{
+                        color: teal;
+                        background-color: white;
+                        border: 1px solid teal;
+                    }
                 }
             }
+        }
+    }
+
+    // FOOTER
+    footer{
+        margin-top: 100px;
+        padding: 20px;
+        background-color: $gray_lighten;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 12px;
+        img{
+            height: 50px
         }
     }
 }
