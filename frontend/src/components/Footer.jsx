@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer>
       <img src={Logo} alt="mario" />
-      <span>i love rafaa</span>
+      <span>copy right</span>
     </footer>
   )
 }
